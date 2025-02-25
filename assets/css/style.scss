@@ -3,27 +3,26 @@
 
 @import "minima";
 
-:root {
-  --primary-color: #ccccff;       /* Periwinkle */
-  --primary-color-dark: #aaaadd;
-  --primary-color-light: #eeeeff;
-  --text-color: #333333;
-  --light-text: #666666;
-  --background: #ffffff;s
-  --secondary-background: #f8f9fa;
-}
+/* Farbdefinitionen */
+$primary-color: #ccccff;       /* Periwinkle */
+$primary-color-dark: #aaaadd;
+$primary-color-light: #eeeeff;
+$text-color: #333333;
+$light-text: #666666;
+$background: #ffffff;
+$secondary-background: #f8f9fa;
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: var(--text-color);
+  color: $text-color;
   line-height: 1.6;
-  background-color: var(--background);
+  background-color: $background;
 }
 
 .site-header {
-  border-top: 5px solid var(--primary-color-dark);
-  border-bottom: 1px solid var(--primary-color);
-  background-color: var(--primary-color);
+  border-top: 5px solid $primary-color-dark;
+  border-bottom: 1px solid $primary-color;
+  background-color: $primary-color;
 }
 
 .site-title, .site-title:visited {
@@ -40,11 +39,11 @@ body {
 }
 
 a, a:visited {
-  color: var(--primary-color-dark);
+  color: $primary-color-dark;
 }
 
 a:hover {
-  color: var(--primary-color);
+  color: $primary-color;
   text-decoration: none;
 }
 
@@ -53,19 +52,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  border-bottom: 2px solid var(--primary-color);
+  border-bottom: 2px solid $primary-color;
   padding-bottom: 0.3em;
   margin-top: 1.5em;
 }
 
 h3 {
-  color: var(--primary-color-dark);
+  color: $primary-color-dark;
   margin-top: 1.2em;
 }
 
 .button {
   display: inline-block;
-  background-color: var(--primary-color);
+  background-color: $primary-color;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -76,12 +75,12 @@ h3 {
 }
 
 .button:hover {
-  background-color: var(--primary-color-dark);
+  background-color: $primary-color-dark;
   color: white;
 }
 
 .hero {
-  background-color: var(--primary-color-light);
+  background-color: $primary-color-light;
   padding: 3rem 0;
   margin-bottom: 2rem;
   text-align: center;
@@ -113,7 +112,7 @@ h3 {
 
 .card-title {
   margin-top: 0;
-  color: var(--primary-color-dark);
+  color: $primary-color-dark;
 }
 
 .contact-form input,
@@ -130,7 +129,7 @@ h3 {
 }
 
 .contact-form button {
-  background-color: var(--primary-color);
+  background-color: $primary-color;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -140,7 +139,7 @@ h3 {
 }
 
 .contact-form button:hover {
-  background-color: var(--primary-color-dark);
+  background-color: $primary-color-dark;
 }
 
 .policy-list {
@@ -161,20 +160,20 @@ h3 {
 }
 
 .site-footer {
-  background-color: var(--primary-color-light);
-  border-top: 1px solid var(--primary-color);
+  background-color: $primary-color-light;
+  border-top: 1px solid $primary-color;
   padding: 2rem 0;
 }
 
 .footer-heading {
-  color: var(--primary-color-dark);
+  color: $primary-color-dark;
 }
 
 @media screen and (max-width: 600px) {
   .hero h1 {
     font-size: 2rem;
   }
-
+  
   .hero p {
     font-size: 1rem;
   }
