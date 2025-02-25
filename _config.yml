@@ -1,0 +1,32 @@
+# Website-Einstellungen für Die Rationale
+title: Die Rationale
+email: kontakt@dierationale.com
+description: >-
+  Evidenzbasierter Fortschritt für Deutschland. Eine politische Partei, die sich auf wissenschaftliche Evidenz, technologischen Fortschritt und Vorbereitung auf die Zukunft konzentriert.
+baseurl: ""
+url: ""
+
+# Build-Einstellungen
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Ausschlüsse
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Navigation
+header_pages:
+  - index.md
+  - ueber-uns.md
+  - positionen.md
+  - kontakt.md
